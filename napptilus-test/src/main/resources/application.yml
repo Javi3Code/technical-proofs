@@ -1,0 +1,34 @@
+application:
+  version: 0.1.0
+  title: Napptilus Technical Proof
+  owner: Javier Pérez Alonso
+logging:
+  level:
+    root: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+server:
+  port: 8090
+  servlet:
+    context-path: /api
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+  datasource:
+    url: jdbc:h2:mem:napptilus_db
+    username: sa
+    password:
+  flyway:
+    enabled: true
+  h2:
+    console:
+      path: /h2
+      enabled: true
+  jpa:
+    hibernate:
+      jdbc.time_zone: UTC
+      ddl-auto: none
+      show-sql: true
