@@ -13,6 +13,8 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>napptilus-tech-proof</name>
   <description>Napptilus Technical Proof</description>
+  <packaging>war</packaging>
+
   <properties>
     <java.version>17</java.version>
     <jakarta.xml.bind-api.version>4.0.0</jakarta.xml.bind-api.version>
@@ -83,6 +85,7 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
@@ -97,6 +100,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
+          <finalName>tech-prf</finalName>
           <outputDirectory>${project.basedir}/artifact</outputDirectory>
         </configuration>
       </plugin>

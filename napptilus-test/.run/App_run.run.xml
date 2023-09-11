@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="App_runn" type="Application" factoryName="Application">
+  <configuration default="false" name="App_run" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="org.jeycode.NapptilusTechProofApplication" />
     <module name="tech-proof" />
     <method v="2">

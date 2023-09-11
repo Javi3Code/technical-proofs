@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "0b904935-5368-4640-8942-339087fef969",
+		"name": "Napptilus-tech-proof",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27395387"
+	},
+	"item": [
+		{
+			"name": "Applicable Price Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/brands/:brandId/products/:productId/applicable-price?applicationDate=2020-06-16T21:00:00Z",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"brands",
+						":brandId",
+						"products",
+						":productId",
+						"applicable-price"
+					],
+					"query": [
+						{
+							"key": "applicationDate",
+							"value": "2020-06-16T21:00:00Z"
+						}
+					],
+					"variable": [
+						{
+							"key": "brandId",
+							"value": "1"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
